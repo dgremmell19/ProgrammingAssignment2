@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The makeCacheMatrix will take a matrix and cache it in an alternate
+## environment to be used later to call and solve functions quicker. A valid
+## matrix must be used for the functions to perform inversion. 
 
-## Write a short comment describing this function
+## makeCacheMatrix takes a matrix as its input and stores it in a list of functions.
+## Store this outcome to a variable. 
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
@@ -18,7 +20,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cachesolve takes the list from the alternate function and uses the list functions
+## from the alternate environment to invert the matrix. Use the outcome variable from 
+## makeCacheMatrix as the input. 
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
